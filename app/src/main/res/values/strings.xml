@@ -3,4 +3,13 @@
     <string name="welcome_message">Welcome to ALC 4.0</string>
     <string name="about_alc">About ALC</string>
     <string name="my_profile">My Profile</string>
+    <string name="my_name">Ahmed ElSaman</string>
+    <string name="track">Track: Android</string>
+    <string name="country">Country: Egypt</string>
+    <string name="email">Email: ahmed.saman@hotmail.com</string>
+    <string name="phone_number">Phone number: +201118033321</string>
+    <string name="slack_username">Slack Username: Ahmed Saman</string>
+    <string name="main_activity_label">ALC 4 Phase 1</string>
+    <string name="about_activity_label">About ALC</string>
+    <string name="my_profile_activity_label">My Profile</string>
 </resources>

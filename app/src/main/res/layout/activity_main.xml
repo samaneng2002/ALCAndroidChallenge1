@@ -6,25 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_middle_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
     <TextView
         android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="@string/welcome_message"
-        android:layout_marginTop="@dimen/top_large_margin"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bt_about"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        />
 
     <Button
         android:id="@+id/bt_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/about_alc"
-        android:layout_marginTop="@dimen/top_large_margin"
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        android:layout_marginBottom="@dimen/top_large_margin"
+        app:layout_constraintBottom_toTopOf="@id/gl_middle_main"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        style="@style/mainButtonsStyle"
 
 
         />
@@ -33,16 +48,14 @@
         android:id="@+id/bt_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/top_large_margin"
+        android:padding="8dp"
         android:text="@string/my_profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_about"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_middle_main"
 
+        style="@style/mainButtonsStyle"
         />
 
 </android.support.constraint.ConstraintLayout>
